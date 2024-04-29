@@ -1,0 +1,20 @@
+{% extends 'base.html' %} {% block title %}MadLibs!{%
+endblock %} {% block content %}
+<h1>Madlibs</h1>
+<form
+	action="/start_story"
+	method="POST"
+	id="story-select-form"
+>
+	<label for="story-select">Select a Story:</label>
+	<select name="selected_story" id="story-select">
+		<option value="story_1">The Fairytale</option>
+		<option value="story_2">The Mysterious Forest</option>
+		<option value="story_3">The Enchanted Garden</option>
+		<option value="story_4">The Haunted Mansion</option>
+		<option value="story_5">The Lost City</option>
+		<option value="story_6">The Wandering Traveller</option>
+	</select>
+	<button type="submit">Start Story!</button>
+</form>
+{% endblock %}

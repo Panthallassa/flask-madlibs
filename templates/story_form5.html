@@ -1,0 +1,21 @@
+{% extends 'base.html' %} {% block title %}The Lost City{%
+endblock %} {% block content %}
+<form action="/story5" method="POST">
+	<label for="verb">verb:</label>
+	<input type="text" name="verb" id="verb-input" />
+
+	<label for="adjective">adjective:</label>
+	<input
+		type="text"
+		name="adjective"
+		id="adjective-input"
+	/>
+
+	<label for="noun">noun:</label>
+	<input type="text" name="noun" id="noun-input" />
+
+	<button type="submit" class="story-form-button">
+		Submit
+	</button>
+</form>
+{% endblock %}
